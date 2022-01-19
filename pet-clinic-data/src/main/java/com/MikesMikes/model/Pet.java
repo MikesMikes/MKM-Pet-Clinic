@@ -1,4 +1,4 @@
-package com.MikesMikes.mkmpetclinic.model;
+package com.MikesMikes.model;
 
 import java.time.LocalDate;
 
