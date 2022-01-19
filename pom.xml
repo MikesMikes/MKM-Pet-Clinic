@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.MikesMikes</groupId>
     <artifactId>mkm-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>mkm-pet-clinic</name>
     <description>MikeMikes Pet Clinic</description>
     <properties>
