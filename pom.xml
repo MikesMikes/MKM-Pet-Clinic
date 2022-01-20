@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.MikesMikes</groupId>
     <artifactId>mkm-pet-clinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>mkm-pet-clinic</name>
     <description>MikeMikes Pet Clinic</description>
     <properties>
@@ -41,6 +41,6 @@
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:MikesMikes/mkm-pet-clinic.git</developerConnection>
-      <tag>mkm-pet-clinic-0.0.2</tag>
+      <tag>mkm-pet-clinic-0.0.1</tag>
   </scm>
 </project>
