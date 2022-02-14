@@ -46,7 +46,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.MikesMikes.MkmPetClinicApplication</mainClass>
+                    <mainClass>com.MikesMikes.petclinic.MkmPetClinicApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
