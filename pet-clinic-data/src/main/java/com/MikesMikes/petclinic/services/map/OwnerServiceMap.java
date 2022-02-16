@@ -1,7 +1,7 @@
-package com.MikesMikes.services.map;
+package com.MikesMikes.petclinic.services.map;
 
-import com.MikesMikes.model.Owner;
-import com.MikesMikes.services.OwnerService;
+import com.MikesMikes.petclinic.model.Owner;
+import com.MikesMikes.petclinic.services.OwnerService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

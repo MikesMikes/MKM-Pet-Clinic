@@ -1,36 +1,36 @@
-package com.MikesMikes.services.map;
+package com.MikesMikes.petclinic.services.map;
 
-import com.MikesMikes.model.Vet;
-import com.MikesMikes.services.VetService;
+import com.MikesMikes.petclinic.model.Pet;
+import com.MikesMikes.petclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
-
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
-    public Set<Vet> findAll() {
+    public Set<Pet> findAll() {
         return super.findAll();
     }
 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+
     }
 
     @Override
-    public void delete(Vet object) {
+    public void delete(Pet object) {
         super.delete(object);
     }
 
     @Override
-    public Vet save(Vet object) {
+    public Pet save(Pet object) {
         return super.save(object.getId(), object);
     }
 
     @Override
-    public Vet findById(Long id) {
+    public Pet findById(Long id) {
         return super.findById(id);
     }
 }

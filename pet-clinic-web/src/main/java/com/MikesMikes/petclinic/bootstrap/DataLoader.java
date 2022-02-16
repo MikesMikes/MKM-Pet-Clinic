@@ -1,9 +1,9 @@
 package com.MikesMikes.petclinic.bootstrap;
 
-import com.MikesMikes.model.Owner;
-import com.MikesMikes.model.Vet;
-import com.MikesMikes.services.OwnerService;
-import com.MikesMikes.services.VetService;
+import com.MikesMikes.petclinic.model.Owner;
+import com.MikesMikes.petclinic.model.Vet;
+import com.MikesMikes.petclinic.services.OwnerService;
+import com.MikesMikes.petclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
