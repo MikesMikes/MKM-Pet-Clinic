@@ -2,10 +2,11 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Owners Index Page</title>
 </head>
 <body>
 <h1 th:text="'List of owners'">asdad</h1>
+
 
 <table>
     <thead>
@@ -16,10 +17,11 @@
     </tr>
     </thead>
     <tbody>
+
     <tr th:each="owner : ${owners}">
-        <td th:text="${owner.id}"></td>
-        <td th:text="${owner.getFirstName()}"></td>
-        <td th:text="${owner.getLastName()}"></td>
+        <td th:text="${owner?.id}"></td>
+        <td th:text="${owner?.getFirstName()}"></td>
+        <td th:text="${owner?.getLastName()}"></td>
     </tr>
     </tbody>
 </table>
