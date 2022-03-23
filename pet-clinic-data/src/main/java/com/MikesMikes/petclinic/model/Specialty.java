@@ -1,5 +1,6 @@
 package com.MikesMikes.petclinic.model;
 
+
 public class Specialty extends BaseEntity {
     private String description;
 
