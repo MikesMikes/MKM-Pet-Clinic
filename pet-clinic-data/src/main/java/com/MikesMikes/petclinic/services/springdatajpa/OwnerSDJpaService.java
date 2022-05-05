@@ -5,12 +5,15 @@ import com.MikesMikes.petclinic.repositories.OwnerRepository;
 import com.MikesMikes.petclinic.repositories.PetRepository;
 import com.MikesMikes.petclinic.repositories.PetTypeRepository;
 import com.MikesMikes.petclinic.services.OwnerService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
+@Slf4j
 @Service
 @Profile("springdatajpa")
 public class OwnerSDJpaService implements OwnerService {
@@ -34,6 +37,7 @@ public class OwnerSDJpaService implements OwnerService {
 
     @Override
     public Owner findById(Long aLong) {
+        log.info("findById - ");
         return ownerRepository.findById(aLong).orElse(null);
     }
 
@@ -55,5 +59,10 @@ public class OwnerSDJpaService implements OwnerService {
     @Override
     public Owner findByLastName(String lastName) {
         return ownerRepository.findByLastName(lastName);
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+        return ownerRepository.findAllByLastNameLike(lastName);
     }
 }
