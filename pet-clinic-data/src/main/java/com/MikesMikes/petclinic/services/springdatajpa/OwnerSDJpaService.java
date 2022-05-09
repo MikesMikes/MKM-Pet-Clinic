@@ -43,6 +43,7 @@ public class OwnerSDJpaService implements OwnerService {
 
     @Override
     public Owner save(Owner object) {
+        log.info("save - Owner: " + object.getId());
         return ownerRepository.save(object);
     }
 
