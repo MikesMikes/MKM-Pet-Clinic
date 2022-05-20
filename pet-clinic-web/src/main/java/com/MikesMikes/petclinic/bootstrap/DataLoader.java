@@ -2,11 +2,13 @@ package com.MikesMikes.petclinic.bootstrap;
 
 import com.MikesMikes.petclinic.model.*;
 import com.MikesMikes.petclinic.services.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
+@Slf4j
 @Component
 public class DataLoader implements CommandLineRunner {
 
@@ -68,6 +70,7 @@ public class DataLoader implements CommandLineRunner {
         owner1.getPets().add(mikesPet);
 
         ownerService.save(owner1);
+        log.info("owner1: " + owner1.getId());
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Fiona");
@@ -85,6 +88,7 @@ public class DataLoader implements CommandLineRunner {
         owner2.getPets().add(fionasPet);
 
         ownerService.save(owner2);
+        log.info("owner2: "+ owner2.getId());
 
         Visit catVisit = new Visit();
         catVisit.setPet(fionasPet);
